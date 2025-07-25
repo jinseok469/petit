@@ -5,12 +5,19 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  max-width: 600px;
+  width: 100%;
+  margin:0 auto;
+  min-height: 100vh;
+  height: 100%;
+  box-shadow: rgba(100,100,100,0.2) 0px 0px 29px 0px;
+  padding: 0px 0px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #171717;
   }
 }
 
@@ -25,3 +32,21 @@ body {
     text-wrap: balance;
   }
 }
+
+/* 기본 점 */
+.swiper-pagination-bullet {
+  background-color: #FFDAAF !important;
+  width: 10px !important;
+  height: 10px !important;
+  opacity: 1;
+  border-radius: 50%;
+  margin: 0 4px !important;  /* 점 사이 간격 조절 */
+  transform: scale(1);        /* 기본 크기 */
+}
+
+/* 활성된 점 */
+.swiper-pagination-bullet-active {
+  background-color: #fff !important;
+  transform: scale(1.4);      /* 크기를 1.5배로 키움 */
+}
+

@@ -11,9 +11,11 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        patit : "#EE9F44",
       },
     },
   },
-  plugins: [],
+  plugins: []
+ 
 };
 export default config;
